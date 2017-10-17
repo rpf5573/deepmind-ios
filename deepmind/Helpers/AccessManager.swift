@@ -160,18 +160,24 @@ class AccessManager : NSObject {
     log.verbose("called")
     switch _type {
     case .picture:
+        log.verbose("picture")
       imagePicker.mediaTypes = [kUTTypeImage as String]
       imagePicker.sourceType = UIImagePickerControllerSourceType.camera
       break;
     case .video:
+        log.verbose("video")
       imagePicker.mediaTypes = [kUTTypeMovie as String]
       imagePicker.sourceType = UIImagePickerControllerSourceType.camera
       imagePicker.showsCameraControls = true
       imagePicker.videoQuality = UIImagePickerControllerQualityType.typeMedium
       break;
     case .photolibrary:
-      imagePicker.mediaTypes = [kUTTypeImage as String, kUTTypeMovie as String]
-      imagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary
+        log.verbose("photolibrary")
+        if (UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary)){
+            log.verbose("yes you can photolibrary")
+            imagePicker.mediaTypes = [kUTTypeImage as String, kUTTypeMovie as String]
+            imagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary
+        }
       break;
     default: break
     }

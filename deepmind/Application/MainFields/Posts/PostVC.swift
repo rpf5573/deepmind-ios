@@ -252,6 +252,7 @@ class PostViewController : UIViewController, UINavigationControllerDelegate, UII
   func handleUploadMenuItem() {
     log.verbose("called")
     let owner = imageView.getOwner()
+		// 이 이미지가, video image든, 그냥 picture image든, photolibrary image든 상관 없어!
     guard let img = imageView.image, owner != .post else {
       alert.show(Message: "업로드할 자료가 없습니다", CallBack: nil)
       return
@@ -259,7 +260,11 @@ class PostViewController : UIViewController, UINavigationControllerDelegate, UII
     if ( owner == .picture ) {
       upload(Image: img)
     } else {
-      upload(Video: videoPlayBtn.videoPath!)
+			if let videoPath = videoPlayBtn.videoPath {
+				upload(Video: videoPath)
+			} else {
+				log.error("videoPlayBtn.videoPath -> nil")
+			}
     }
   }
   //(void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
@@ -542,6 +547,7 @@ class PostViewController : UIViewController, UINavigationControllerDelegate, UII
     log.debug(["urlString --> " , urlString])
     if let url = URL(string: urlString) {
       log.error(["url --> " , url])
+			self.imageView.set(Owner: .post)
       self.imageView.isHidden = false
       self.imageView.kf.setImage(with: url)
       self.imageView.addGestureRecognizer(fullImageTapGestureRecognizer)

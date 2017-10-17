@@ -111,7 +111,8 @@ class PostSelectionViewController : UIViewController, UITableViewDelegate, UITab
             self.alert.show(Message: json["success_message"].stringValue, CallBack: { _ in
               log.debug(["postsCrate.selectedPosts --> " , self.postCrate!.selectedPosts])
               self.delegate.didSelect(Post: post)
-              self.postsListView.reloadData()
+							self.navigationController!.popViewController(animated: true)
+              //self.postsListView.reloadData()
             })
           } else {
             self.alert.show(Message: json["error_message"].stringValue, CallBack: nil);
