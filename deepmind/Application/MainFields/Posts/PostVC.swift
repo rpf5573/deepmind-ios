@@ -328,7 +328,11 @@ class PostViewController : UIViewController, UINavigationControllerDelegate, UII
           self.openPostImage(Post: self.postSelectionVC.postCrate.currentPost!)
         })
       } else {
-        self.alert.show(Message: _json["error_message"].stringValue, CallBack: nil)
+				self.alert.show(Message: _json["error_message"].stringValue, CallBack: { action in
+					if let cp = self.postSelectionVC.postCrate.currentPost {
+						self.openPostImage(Post: cp)
+					}
+				})
       }
     })
   }
