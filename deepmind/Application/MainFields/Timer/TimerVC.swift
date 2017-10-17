@@ -48,7 +48,9 @@ class TimerViewController : UIViewController {
         self.countDownView.set(Time: (json["value"]["time"].intValue * 100))
         self.countDownView.go()
       } else {
-        self.alert.show(Message: json["error_message"].stringValue, CallBack: nil)
+				self.alert.show(Message: json["error_message"].stringValue, CallBack: { action in
+					self.countDownView.reset()
+				})
       }
     })
   }

@@ -146,6 +146,11 @@ class CountDownView : UIView {
       self.changeColorTo(Color: UIColor.red)
     }
   }
+	func reset() {
+		self.min.text = "00"
+		self.second.text = "00"
+		self.mili.text = "00"
+	}
   func makeHorizontalStackView() -> UIStackView {
     let horizontalStackView = UIStackView()
     horizontalStackView.translatesAutoresizingMaskIntoConstraints = false
