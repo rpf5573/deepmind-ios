@@ -18,6 +18,7 @@ class mSettings : Mappable {
   var wholeMapName           : String!
   var teamPlayerCounts       : [Int]!
   var ourTeam                : Int!
+	var beaconInfos						 : [mBeaconInfo]?
   
   required init?(map: Map) {
     log.verbose( "called" )
@@ -34,6 +35,7 @@ class mSettings : Mappable {
     wholeMapName        <- map["whole_map_name"]
     teamPlayerCounts    <- map["team_player_counts"]
     ourTeam             <- map["our_team"]
+		beaconInfos					<- map["beacon_infos"]
     
     log.debug(["total_team_count", totalTeamCount])
     log.debug(["joker_info_questions", jokerInfoQuestions as Any ])

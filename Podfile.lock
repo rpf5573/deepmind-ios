@@ -7,6 +7,7 @@ PODS:
   - Charts (3.0.2):
     - Charts/Core (= 3.0.2)
   - Charts/Core (3.0.2)
+  - EstimoteSDK (4.16.2)
   - ExpandingMenu (0.3.1)
   - Kingfisher (3.10.2)
   - NVActivityIndicatorView (3.6.1)
@@ -32,6 +33,7 @@ DEPENDENCIES:
   - BouncyLayout
   - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
   - Charts
+  - EstimoteSDK
   - ExpandingMenu (~> 0.3)
   - Kingfisher (~> 3.0)
   - NVActivityIndicatorView
@@ -66,6 +68,7 @@ SPEC CHECKSUMS:
   BouncyLayout: f91c6504437a61acd733404f55f75bd8154f5840
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Charts: 236d6ccdd0ce6feae151d89e829a7397381a21fd
+  EstimoteSDK: 17d0778be064419dd905f41981f831052f4c19ee
   ExpandingMenu: 107548f3cb8c04b28a8b6b436983f506849484cc
   Kingfisher: 7297492bf8cec9b2e2dee3519f2219948580d98e
   NVActivityIndicatorView: 9f52a7f84bf5c6a798722c450fe3c198e01c56ed
@@ -81,6 +84,6 @@ SPEC CHECKSUMS:
   UICircularProgressRing: f25e366e0624d87973192b67e572c0712acbae85
   XCGLogger: 0b43697155d41e4a1b15fc776f319c2141646b09
 
-PODFILE CHECKSUM: 9b24c967c628f988bf250e9992c3ffaa41ca2fab
+PODFILE CHECKSUM: 13f64f638755119c1e7c756d7c8410b9b1ce5132
 
 COCOAPODS: 1.2.1

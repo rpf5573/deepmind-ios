@@ -91,6 +91,8 @@ class LoginVC : UIViewController {
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated);
     log.verbose("called")
+		
+		doTestMode() // because I need a Apple's permission to upload this app on appstore
   }
   override func viewWillDisappear(_ animated: Bool) {
     //Keyboard Notification을 제거해 줍니다!
@@ -190,4 +192,10 @@ class LoginVC : UIViewController {
     let userInfo = notification.userInfo!
     keyBoardHeight = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue.height
   }
+	func doTestMode() {
+		alert.show(Message: "This is test mode so pass login step", CallBack: { _ in
+			self.loginTextField.text = "1";
+			self.loginBtn.sendActions(for: UIControlEvents.touchUpInside)
+		})
+	}
 }

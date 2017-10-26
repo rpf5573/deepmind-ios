@@ -19,4 +19,5 @@ target ‘deepmind’ do
   pod 'NVActivityIndicatorView'
   pod 'UICircularProgressRing'
   pod 'ExpandingMenu', '~> 0.3'
+	pod 'EstimoteSDK'
 end

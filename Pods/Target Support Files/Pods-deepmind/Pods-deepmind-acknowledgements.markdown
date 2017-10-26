@@ -281,6 +281,11 @@ Apache License
 
 
 
+## EstimoteSDK
+
+Copyright 2017 Estimote, Inc. All rights reserved.
+
+
 ## ExpandingMenu
 
 Copyright (c) 2015 monoqlo <monoqlo44@gmail.com>

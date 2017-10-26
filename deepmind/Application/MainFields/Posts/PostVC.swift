@@ -35,7 +35,7 @@ class PostViewController : UIViewController, UINavigationControllerDelegate, UII
     }
   }
   
-  //  eunm
+  //  enum
   /* ------------------------------------ */
   enum MediaType {
     case picture
@@ -161,7 +161,7 @@ class PostViewController : UIViewController, UINavigationControllerDelegate, UII
         disableVideoPlayBtn()
         openPostImage(Post: currentPost)
       }
-        // 처음 온건지, 앱을 껏다가 다시 킨건지 몰라!
+			// 처음 온건지, 앱을 껏다가 다시 킨건지 몰라!
       else {
         getPosts(AndThen: { json in
           if ( json["response_code"].intValue == 201 ) {
@@ -170,7 +170,7 @@ class PostViewController : UIViewController, UINavigationControllerDelegate, UII
             if ( self.postSelectionVC.postCrate?.currentPost != nil ) {
               self.openPostImage(Post: self.postSelectionVC.postCrate.currentPost!)
             }
-              // 그냥 처음들어온 상황
+						// 그냥 처음들어온 상황
             else {}
           }
         })
@@ -268,7 +268,8 @@ class PostViewController : UIViewController, UINavigationControllerDelegate, UII
     }
   }
   //(void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
-  func handleSaveImageToAlbum(Image _img: UIImage, didFinishSavingWithError _error: NSError?, ContextInfo _contextInfo: AnyObject ) {
+  func handleSaveImageToAlbum(Image _img: UIImage, didFinishSavingWithError _error: NSError?, ContextInfo _contextInfo:
+		AnyObject ) {
     guard let error = _error else {
       comeBackWithPicture(Image: _img)
       return

@@ -44,7 +44,8 @@
 		5BAF96EE1F0F8CA5009FAEB1 /* JokerInfoRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF96ED1F0F8CA5009FAEB1 /* JokerInfoRegisterVC.swift */; };
 		5BC07D4A1F0C60B200D71F3A /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC07D491F0C60B200D71F3A /* MapVC.swift */; };
 		5BC07D4C1F0C60E900D71F3A /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC07D4B1F0C60E900D71F3A /* Point.swift */; };
-		D1BA54D9FCD060047235FABE /* Pods_deepmind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9335152E8EF232D3E7D91DBE /* Pods_deepmind.framework */; };
+		5BFD0DF71F9A2C2E00BF480D /* BeaconInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD0DF61F9A2C2E00BF480D /* BeaconInfo.swift */; };
+		5BFD0DF91F9AD2A800BF480D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD0DF81F9AD2A800BF480D /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,7 @@
 		5B63BE561F10E1C6002ED35B /* OutListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutListVC.swift; sourceTree = "<group>"; };
 		5B63BE581F10E613002ED35B /* TeamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
 		5B63BE5A1F11143D002ED35B /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		5B86AECC1F95E38000BFB4CA /* ObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
 		5B8D314E1F0C642F009D941E /* OutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutVC.swift; sourceTree = "<group>"; };
 		5B8D31501F0C6655009D941E /* PostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		5B8D31521F0C666C009D941E /* TimerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerVC.swift; sourceTree = "<group>"; };
@@ -118,7 +120,8 @@
 		5BAF96ED1F0F8CA5009FAEB1 /* JokerInfoRegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokerInfoRegisterVC.swift; sourceTree = "<group>"; };
 		5BC07D491F0C60B200D71F3A /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		5BC07D4B1F0C60E900D71F3A /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
-		9335152E8EF232D3E7D91DBE /* Pods_deepmind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deepmind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BFD0DF61F9A2C2E00BF480D /* BeaconInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconInfo.swift; sourceTree = "<group>"; };
+		5BFD0DF81F9AD2A800BF480D /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		BF0102E01112BE8088E58024 /* Pods-deepmind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deepmind.release.xcconfig"; path = "Pods/Target Support Files/Pods-deepmind/Pods-deepmind.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,7 +131,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B31B6DD1F14F38900CEA773 /* CustomSwipeCellKit.xcodeproj in Frameworks */,
-				D1BA54D9FCD060047235FABE /* Pods_deepmind.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				5B31B6B01F14F28E00CEA773 /* CustomSwipeCellKit.xcodeproj */,
-				9335152E8EF232D3E7D91DBE /* Pods_deepmind.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -182,6 +183,7 @@
 				5B44BDC01F0B083500303D64 /* Info.plist */,
 				5B44BDBD1F0B083500303D64 /* LaunchScreen.storyboard */,
 				5B44BDB81F0B083500303D64 /* deepmind.xcdatamodeld */,
+				5B86AECC1F95E38000BFB4CA /* ObjCBridge.h */,
 			);
 			path = deepmind;
 			sourceTree = "<group>";
@@ -193,6 +195,7 @@
 				5BAF96E91F0F644B009FAEB1 /* Player.swift */,
 				5B31B6031F14BD2500CEA773 /* PostCrate.swift */,
 				5B44BDE01F0B515400303D64 /* Settings.swift */,
+				5BFD0DF61F9A2C2E00BF480D /* BeaconInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -247,8 +250,7 @@
 			children = (
 				5BC07D4B1F0C60E900D71F3A /* Point.swift */,
 			);
-			name = Point;
-			path = Points;
+			path = Point;
 			sourceTree = "<group>";
 		};
 		5B44BDD51F0B4A3000303D64 /* Out */ = {
@@ -277,8 +279,8 @@
 		5B44BDD71F0B4A3E00303D64 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
-				5B8D31521F0C666C009D941E /* TimerVC.swift */,
 				5B31B6E81F152E7F00CEA773 /* CountDownView.swift */,
+				5B8D31521F0C666C009D941E /* TimerVC.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -314,6 +316,7 @@
 				5B44BDD61F0B4A3500303D64 /* Posts */,
 				5B44BDD71F0B4A3E00303D64 /* Timer */,
 				5B44BDEA1F0C3D0B00303D64 /* MainFieldsTBC.swift */,
+				5BFD0DF81F9AD2A800BF480D /* WebViewController.swift */,
 			);
 			path = MainFields;
 			sourceTree = "<group>";
@@ -486,11 +489,13 @@
 				5B63BE5B1F11143D002ED35B /* PlayerCell.swift in Sources */,
 				5B63BE591F10E613002ED35B /* TeamCell.swift in Sources */,
 				5BAF96C51F0F276F009FAEB1 /* JokerInfoRegisterCell.swift in Sources */,
+				5BFD0DF91F9AD2A800BF480D /* WebViewController.swift in Sources */,
 				5B31B6081F14DC9C00CEA773 /* PostSelectionCell.swift in Sources */,
 				5BC07D4C1F0C60E900D71F3A /* Point.swift in Sources */,
 				5B040B0E1F1232F5003E5667 /* JokerInfoListVC.swift in Sources */,
 				5B44BDB21F0B083500303D64 /* AppDelegate.swift in Sources */,
 				5B44BDEF1F0C41F300303D64 /* MemberRegisterVC.swift in Sources */,
+				5BFD0DF71F9A2C2E00BF480D /* BeaconInfo.swift in Sources */,
 				5B8D31511F0C6655009D941E /* PostVC.swift in Sources */,
 				5B44BDED1F0C3FFA00303D64 /* PlayerRegisterVC.swift in Sources */,
 				5B8D314F1F0C642F009D941E /* OutVC.swift in Sources */,
@@ -625,11 +630,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AEZ7S3NK3S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/deepmind/Libraries/Estimote",
+				);
 				INFOPLIST_FILE = deepmind/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = simpli.co.kr.deepmind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/ObjCBridge.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -641,11 +651,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AEZ7S3NK3S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/deepmind/Libraries/Estimote",
+				);
 				INFOPLIST_FILE = deepmind/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = simpli.co.kr.deepmind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/ObjCBridge.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
